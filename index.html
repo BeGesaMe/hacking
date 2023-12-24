@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hacking web site</title>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+
+    <style>
+
+        .input-group{
+            width: 40%;
+            height: 20vh;
+            /* border: solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+        }
+        .input-group input{
+            width: 50%;
+            height: 5vh;
+            border: none;
+            border-radius: 10px 0px 0px 10px;
+            padding-left: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .input-group button{
+            width: 10%;
+            cursor: pointer;
+            height: 5.2vh;
+            border: none;
+            border-radius: 0px 10px 10px 0px;
+            border: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://imagez.tmz.com/image/76/o/2017/01/05/763ef09141ad5609a43093ec2d81ec82_md.gif");
+            background-size: cover;
+        }
+
+        @media (max-width:1000px){
+            
+            .input-group input{
+                width: 60%;
+                height: 5vh;
+
+            }
+            .input-group button{
+                width: 20%;
+                height: 5.3vh;
+
+            }
+        }
+
+        @media (max-width: 600px){
+            
+            .input-group{
+                width: 100%;
+                height: 20vh;
+                /* border: solid blue; */
+            }
+            .input-group input{
+                width: 40%;
+                height: 5vh;
+
+            }
+            .input-group button{
+                width: 20%;
+                height: 5.3vh;
+
+            }
+        }
+       
+      
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="input-group">
+        <input type="text" placeholder="Enter Account">
+        <button class="knopka">
+            <i class="fas fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <img src="./image (1).png" style="position: absolute; bottom: 1px; left: 10px; margin-top: 100px ;">
+
+
+    <script>
+
+        let body = document.querySelector('body');
+        let knopka = document.querySelector('.knopka');
+
+        knopka.addEventListener('click', ()=>{
+           
+           alert('Internet juda sekin ishlamoqda iltimos boshqa internet qurilmasiga ulanib, yana urunib kuring')
+
+            // let p = document.querySelector('p');
+
+            // p.innerHTML = "Internet juda sekin ishlamoqda iltimos boshqa internet qurilmasiga ulanib, yana urunib kuring"
+            
+            // p.style = "text-align:center; color: red; background-color: white; border-radius: 10px;";
+            // body.appendChild(p)
+        })
+
+
+    </script>
+    
+</body>
+</html>

@@ -203,8 +203,20 @@ rel="stylesheet"
 
            setTimeout(function() {
              demo.style = "display none"
+
+             let text = "Xurmatli Janob siz bilan bog'liq qandaydir tushinarsiz muamo bulmoqda iltimos, keyinroq yana urunib kuring ";
+
+             let ptext = document.createElement('p');
+             ptext.innerHTML = text;
+
+             ptext.style = "text-align: center; color: red; position: absolute; top: 50%; background-color: white; border-radius: 15px; padding: 10px;";
+             body.appendChild(ptext)
+
+
         }, 5000);
-           
+        
+       
+
         })
 
         console.log("Salom");

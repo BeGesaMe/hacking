@@ -14,217 +14,28 @@ rel="stylesheet"
 href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 rel="stylesheet"
 />
-
-    <style>
-
-        .input-group{
-            width: 100%;
-            height: 20vh;
-            /* border: solid red; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 200px;
-        }
-        .input-group input{
-            width: 50%;
-            height: 5vh;
-            border: none;
-            border-radius: 10px 0px 0px 10px;
-            padding-left: 10px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .input-group button{
-            width: 10%;
-            cursor: pointer;
-            height: 5.2vh;
-            border: none;
-            border-radius: 0px 10px 10px 0px;
-            border: none;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        body{
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url("https://steamuserimages-a.akamaihd.net/ugc/851595217487793558/42AA2AAD9AB4A014D0316A51B65C95C46302C501/?imw=512&amp;imh=256&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
-            background-size: cover;
-        }
-
-        @media (max-width:1000px){
-            
-            .input-group input{
-                width: 60%;
-                height: 5vh;
-
-            }
-            .input-group button{
-                width: 20%;
-                height: 5.3vh;
-
-            }
-          
-        }
-
-        @media (max-width: 600px){
-            
-            .input-group{
-                width: 100%;
-                height: 20vh;
-                /* border: solid blue; */
-            }
-            .input-group input{
-                width: 60%;
-                height: 5vh;
-
-            }
-            .input-group button{
-                width: 20%;
-                height: 5.3vh;
-
-            }
-       
-        }
-
-        @media (max-width: 400px){
-            
-            .input-group{
-                width: 100%;
-                height: 20vh;
-                /* border: solid blue; */
-            }
-            .input-group input{
-                width: 70%;
-                height: 5vh;
-
-            }
-            .input-group button{
-                width: 30%;
-                height: 5.2vh;
-
-            }
-
-            
-        }
-       
-      #demo{
-        position: absolute;
-        top: 60%;
-        left: 42%;
-        font-size: 50px;
-        color: red;
-        animation: bege 5s infinite;
-        transition: 2s;
-        display: none;
-      }
-
-      @keyframes bege {
-        10%{
-            transform: scale(1.1);
-           
-            transition: 2s;
-            animation: 3s;
-        }
-        20%{
-            transform: scale(1.2);
-            transition: 2s;
-        }
-        30%{
-            transform: scale(1.3);
-           
-            transition: 2s;
-            animation: 3s;
-        }
-        40%{
-            transform: scale(1.4);
-            transition: 2s;
-        }
-        50%{
-            transform: scale(1.5);
-           
-            transition: 2s;
-            animation: 3s;
-        }
-        60%{
-            transform: scale(1.6);
-            transition: 2s;
-        }
-        70%{
-            transform: scale(1.7);
-           
-            transition: 2s;
-            animation: 3s;
-        }
-        80%{
-            transform: scale(1.8);
-            transition: 2s;
-        }
-        90%{
-            transform: scale(1.9);
-           
-            transition: 2s;
-            animation: 3s;
-        }
-        100%{
-            transform: scale(2);
-            transition: 2s;
-        }
-      }
-
-
-    </style>
-
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="input-group">
-        <input type="text" placeholder="Enter Account">
-        <button class="knopka">
+    <div class="blurred-box">
+      
+        <div class="user-login-box">
+          <span class="user-icon"></span>
+          <div class="user-name">BeGesaMe </div>
+          <input class="user-password" type="text" />
+          <button onclick="bosing()" class="btn">
             <i class="fas fa-magnifying-glass"></i>
-        </button>
-    </div>
-
-    <p id="demo">Loading...</p>
-
-
-    <script>
-
-        let body = document.querySelector('body');
-        let knopka = document.querySelector('.knopka');
-        let demo = document.querySelector('#demo');
-
-        knopka.addEventListener('click', ()=>{
-           
-        //    alert('Internet juda sekin ishlamoqda iltimos boshqa internet qurilmasiga ulanib, yana urunib kuring')
-
-           demo.style = "display: block"
-
-           setTimeout(function() {
-             demo.style = "display none"
-
-             let text = "Xurmatli Janob siz bilan bog'liq qandaydir tushinarsiz muamo bulmoqda iltimos, keyinroq yana urunib kuring ";
-
-             let ptext = document.createElement('p');
-             ptext.innerHTML = text;
-
-             ptext.style = "text-align: center; color: red; position: absolute; top: 50%; background-color: white; border-radius: 15px; padding: 10px;";
-             body.appendChild(ptext)
-
-
-        }, 5000);
+          </button>
+        </div>
         
-       
+      </div>
 
-        })
-
-        console.log("Salom");
-        
-   
+   <div class="timer-box">
+      <h1 id="timer"></h1>
+   </div>
 
 
-    </script>
-    
+    <script src="app.js"></script>
 </body>
 </html>

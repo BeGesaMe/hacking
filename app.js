@@ -1,6 +1,7 @@
 let input = document.querySelector('input');
 let user_icon = document.querySelector('.user-icon');
 let blurred_box = document.querySelector('.blurred-box');
+let user_name = document.querySelector('.user-name');
  
 input.addEventListener('input', ()=>{
     if(input.value.length <= 5) {
@@ -18,11 +19,17 @@ function bosing(){
     if(input.value.length == 0){
         alert('Malumot kiriting')
     } else{
-           
+        
+        user_name.innerHTML = input.value;
+
+        user_icon.classList.add("bege")
+
 let startTime = Date.now();
 
 
 let duration = 10000000; 
+
+// 10000000
 
 
 let endTime = startTime + duration;
@@ -44,7 +51,7 @@ function countdown() {
     clearInterval(interval);
 
 
-    timer.innerHTML = "0";
+    timer.innerHTML = "Malumot zip fayl kurinishida yuklandi...";
 
   
   } else {

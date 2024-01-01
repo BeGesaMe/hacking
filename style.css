@@ -129,3 +129,11 @@
           margin-top: 300px;
         }
    }
+   .bege {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    background-size: contain;
+    background-image: url('./image\ \(1\).png');
+   }

@@ -101,11 +101,31 @@
     width: 100%;
     height: 10vh;
     /* border: solid red; */
-    position: relative;
-    bottom: 10px;
+    /* position: relative; */
+    margin-top: 190px;
     display: flex;
     justify-content: center;
    }  
    #timer {
     color: red;
+   }
+
+   @media (max-width: 900px){
+    .blurred-box{
+      transform: scale(2);
+    }
+    .timer-box{
+      margin-top: 590px;
+      /* border: solid red; */
+    }
+}
+
+
+   @media (max-width: 500px){
+        .blurred-box{
+          transform: scale(1);
+        }
+        .timer-box{
+          margin-top: 300px;
+        }
    }
